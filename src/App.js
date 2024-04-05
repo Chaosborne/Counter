@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './index.scss';
 
 const Modal = ({ open, setOpen, children }) => (
-  <div className={`overlay animated ${open ? 'show' : ''}`} onClick={() => setOpen(false)}>
+  <div className={`overlay animated ${open ? 'show' : ''}`}>
     <div className="modal">
       <svg onClick={() => setOpen(false)} height="200" viewBox="0 0 200 200" width="200">
         <title />
@@ -23,8 +23,6 @@ function App() {
       </button>
       <Modal open={open} setOpen={setOpen}>
         <img src="https://media2.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" />
-        {/* <h3>It's a modal window</h3> */}
-        {/* <button>123123</button> */}
       </Modal>
     </div>
   );

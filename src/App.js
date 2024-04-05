@@ -23,8 +23,8 @@ function App() {
       </button>
       <Modal open={open} setOpen={setOpen}>
         <img src="https://media2.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" />
-        <h3>It's a modal window</h3>
-        <button>123123</button>
+        {/* <h3>It's a modal window</h3> */}
+        {/* <button>123123</button> */}
       </Modal>
     </div>
   );
